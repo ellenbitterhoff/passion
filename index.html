@@ -40,6 +40,47 @@
       />
       <h1>Velkommen</h1>
     </main>
-    <footer></footer>
+    <footer>
+      <div class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="footer-col1">
+              <h3>Download vores guide</h3>
+              <p>Download vores app til Apple & Android</p>
+              <div class="app-logo">
+                <img src="assets/appstore.png" alt="" />
+                <img src="assets/googleplay.png" alt="" />
+              </div>
+            </div>
+
+            <div class="footer-col2">
+              <img src="assets/logo.png" alt="logo" />
+              <p>Gå på opdagelse i hvilken ferie der bliver din næste</p>
+            </div>
+
+            <div class="footer-col3">
+              <h3>Følg us</h3>
+              <img src="assets/facebook.png" alt="facebook" class="icon" />
+              <img src="assets/insta.png" alt="insta" class="icon" />
+              <img src="assets/twitter.png" alt="twitter" class="icon" />
+              <img src="assets/tiktok.png" alt="tiktok" class="icon" />
+            </div>
+          </div>
+          <hr />
+          <p class="copy">Copyright 2023 CityVenture</p>
+        </div>
+      </div>
+    </footer>
+    <script>
+      var MenuItems = document.getElementById("MenuItems");
+      MenuItems.style.maxHeight = "0px";
+      function menutoggle() {
+        if (MenuItems.style.maxHeight == "0px") {
+          MenuItems.style.maxHeight = "200px";
+        } else {
+          MenuItems.style.maxHeight = "0px";
+        }
+      }
+    </script>
   </body>
 </html>

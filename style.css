@@ -4,7 +4,7 @@
   box-sizing: 0;
   font-family: "Outfit";
 }
-/*forside*/
+/*-----------forside-----------*/
 .container {
   position: relative;
   text-align: center;
@@ -14,7 +14,6 @@
   width: 100%;
   margin: 0;
 }
-
 .centered {
   position: absolute;
   top: 50%;
@@ -22,10 +21,8 @@
   transform: translate(-50%, -50%);
   font-size: 8rem;
 }
-body {
-  background-image: url(baggrund.png);
-}
-/*HEADER*/
+
+/*--------HEADER---------*/
 .navbar {
   display: flex;
   align-items: center;
@@ -67,6 +64,7 @@ a {
   z-index: -1;
 }
 
+/*----------KONTAKT------------*/
 label,
 input,
 button,
@@ -95,4 +93,92 @@ form {
   display: grid;
   align-items: center;
   justify-content: center;
+}
+
+/*-----FOOTER-----*/
+.footer {
+  background: white;
+  color: black;
+  font-size: 14px;
+  padding: 60px 0 20px 0;
+}
+.footer p {
+  color: black;
+}
+.footer h3 {
+  color: black;
+  margin-bottom: 20px;
+}
+.footer img {
+  width: 200px;
+}
+.footer-col1,
+.footer-col2,
+.footer-col3 {
+  min-width: 250px;
+  margin-bottom: 10px;
+}
+.footer-col1 {
+  flex-basis: 25%;
+}
+.footer-col2 {
+  flex: 1;
+  text-align: center;
+}
+.footer-col3 {
+  flex-basis: 25%;
+  text-align: center;
+}
+ul {
+  list-style-type: none;
+}
+.row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.col-2 {
+  flex-basis: 50%;
+  min-width: 300x;
+}
+.app-logo img {
+  width: 40px;
+}
+.footer-col3 img {
+  width: 40px;
+  justify-content: center;
+}
+.footer hr {
+  border: none;
+  background: black;
+  height: 1px;
+  margin: 20px;
+}
+
+@media only screen and (max-width: 800px) {
+  nav ul {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    background: #95a888;
+    width: 100%;
+    overflow: hidden;
+    transition: max-height 0.5s;
+  }
+  nav ul li {
+    display: block;
+    margin-right: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  nav ul li a {
+    color: white;
+  }
+  .menu-icon {
+    display: block;
+    cursor: pointer;
+  }
+}
+@media only screen and (max-width: 600px) {
 }
