@@ -1,0 +1,105 @@
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+}
+
+/* Forms */
+
+form {
+  margin: 10%;
+  padding: 10%;
+  /* background: #d3c8b6; */
+  border: 10%;
+  background-color: #ebebe290;
+}
+
+.checklist {
+  position: relative;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 8px;
+}
+
+input {
+  width: 100%;
+}
+
+button {
+  text-align: center;
+  width: 100%;
+  background-color: #95a888;
+}
+
+/* Billedet */
+
+.billede {
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  border-radius: 8px;
+}
+
+/* Tekst */
+
+h1 {
+  font-size: 3rem;
+  text-align: center;
+  padding: 10%;
+}
+
+h2 {
+  font-size: 2.5rem;
+  line-height: 1.25;
+  text-align: center;
+  margin: 5%;
+}
+
+h3 {
+  /* font-size: 1.3rem; */
+  padding: 10%;
+  color: white;
+  background-color: #95a888;
+}
+
+p {
+  font-size: 1.5rem;
+  line-height: 1.25;
+  text-align: center;
+}
+
+/* Tekst under form */
+
+.følg {
+  font-size: 1.5rem;
+  line-height: 1.25;
+  text-align: center;
+  margin: 10%;
+}
+
+.kontakt {
+  padding: 10%;
+}
+
+.icon {
+  width: 5%;
+  margin: 9%;
+  text-align: center;
+}
+
+footer {
+  position: relative;
+  border-style: solid;
+  border-width: 1px;
+  align-items: center;
+}
+
+@media (max-width: 601px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .billede {
+    width: 100%;
+  }
+}
