@@ -36,6 +36,10 @@ button {
 .billede {
   margin-left: auto;
   margin-right: auto;
+  width: 100%;
+}
+
+.opbillede {
   width: 90%;
   border-radius: 8px;
 }
@@ -63,7 +67,7 @@ h3 {
 }
 
 p {
-  font-size: 1.5rem;
+  font-size: 1rem;
   line-height: 1.25;
   text-align: center;
 }
