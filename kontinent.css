@@ -1,0 +1,51 @@
+@media (min-width: 800px) {
+    .amerika {
+        position: relative;
+        text-align: center;
+        color: white;
+      }
+      .img{
+        width: 40%;
+        margin: 0;
+      }
+      .centered {
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 8rem;
+      }
+      .forside {
+        padding-top: 18rem;
+        text-align: center;
+        padding-bottom: 20rem;
+      }
+      .forside h1 {
+        font-size: 60px;
+        margin-top: -10%;
+      }
+
+      .card1 img {
+        width: 100%;
+        object-fit: cover;
+        border-radius: 5%;
+    
+
+      }
+
+      .card1 h3 {
+        font-size: 22px;
+        transform: translate(25%, -350%);
+      
+      }
+
+      #card_layout {
+        column-gap: 80px;
+      }
+    
+    
+
+
+
+
+}
