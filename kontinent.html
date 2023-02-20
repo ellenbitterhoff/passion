@@ -53,6 +53,8 @@
               <a href="by.html"> <h3>Mexico City</h3></a>
               <a href="by.html">
             </div>
+            </div>
+          </div>
     </main>
     <footer>
       <div class="footer">
@@ -84,6 +86,16 @@
         </div>
       </div>
     </footer>
-    <script href="kontinent.js"></script>
+    <script href="kontinent.js">
+      var MenuItems = document.getElementById("MenuItems");
+      MenuItems.style.maxHeight = "0px";
+      function menutoggle() {
+        if (MenuItems.style.maxHeight == "0px") {
+          MenuItems.style.maxHeight = "200px";
+        } else {
+          MenuItems.style.maxHeight = "0px";
+        }
+      }
+    </script>
   </body>
 </html>
