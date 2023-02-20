@@ -1,22 +1,12 @@
-@media (min-width: 800px) {
-    .amerika {
-        position: relative;
-        text-align: center;
-        color: white;
-      }
+@media (min-width: 600px) {
+ 
       .img{
         width: 40%;
         margin: 0;
       }
-      .centered {
-        position: absolute;
-        top: 20%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        font-size: 8rem;
-      }
+      
       .forside {
-        padding-top: 18rem;
+        padding-top: 20rem;
         text-align: center;
         padding-bottom: 20rem;
       }
@@ -29,19 +19,28 @@
         width: 100%;
         object-fit: cover;
         border-radius: 5%;
+        margin-top: 10%;
     
 
       }
 
       .card1 h3 {
         font-size: 22px;
-        transform: translate(25%, -350%);
+        transform: translate(30%, -400%);
       
       }
 
-      #card_layout {
-        column-gap: 80px;
+      #main_layout {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-gap: 0%;
+        padding: 2rem;
       }
+      .card_layout {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(5rem, 1fr));
+      }
+      
     
     
 
