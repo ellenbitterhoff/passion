@@ -4,9 +4,126 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="by.css" />
+    <link rel="stylesheet" href="globalstyle.css" />
     <title>Document</title>
   </head>
   <body>
-    <script href="by.js"></script>
+    <header>
+      <div class="navbar">
+        <div class="logo">
+          <a href="index.html"><img src="assets/logo.png" alt="logo" width="250px" /></a>
+        </div>
+        <nav>
+          <ul id="MenuItems">
+            <li><a href="kontinent.html">Asien</a></li>
+            <li><a href="kontinent.html">Australien</a></li>
+            <li><a href="kontinent.html">Amerika</a></li>
+            <li><a href="kontinent.html">Europa</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+          </ul>
+        </nav>
+        <img src="assets/menu-icon.png" alt="" class="menu-icon" onclick="menutoggle()" />
+      </div>
+    </header>
+    <main>
+      <div class="hero-section">
+        <img class="forsidebillede" src="/assets/paris.jpg" alt="billede af paris" />
+        <h1>Paris</h1>
+      </div>
+      <div class="content-container">
+        <div class="category-container">
+          <img class="category-photo" src="assets/shopping.jpg" alt="" />
+          <h2 class="category-heading">Shopping</h2>
+          <div class="category-content-container">
+            <template id="item-template">
+              <div class="category-content">
+                <h3 class="category-item-header">Navn på sted</h3>
+                <p class="category-item-address">Adresse</p>
+                <p class="category-item-description">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum consequatur cum accusamus hic ab velit, tempora adipisci iure minima in nostrum commodi possimus cupiditate ut incidunt. Eos est dolorem perferendis fugit, ea, dolores
+                  quia magnam odit, exercitationem repudiandae neque libero!
+                </p>
+                <hr />
+              </div>
+            </template>
+          </div>
+        </div>
+        <div class="category-container">
+          <img class="category-photo" src="assets/shopping.jpg" alt="" />
+          <h2 class="category-heading">Restauranter</h2>
+          <div class="category-content-container">
+            <div class="category-content">
+              <h3 class="category-item-header">Navn på sted</h3>
+              <p class="category-item-address">Adresse</p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum consequatur cum accusamus hic ab velit, tempora adipisci iure minima in nostrum commodi possimus cupiditate ut incidunt. Eos est dolorem perferendis fugit, ea, dolores
+                quia magnam odit, exercitationem repudiandae neque libero!
+              </p>
+              <hr />
+            </div>
+          </div>
+        </div>
+        <div class="category-container">
+          <img class="category-photo" src="assets/shopping.jpg" alt="" />
+          <h2 class="category-heading">Sightseeing</h2>
+          <div class="category-content-container">
+            <div class="category-content">
+              <h3 class="category-item-header">Navn på sted</h3>
+              <p class="category-item-address">Adresse</p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum consequatur cum accusamus hic ab velit, tempora adipisci iure minima in nostrum commodi possimus cupiditate ut incidunt. Eos est dolorem perferendis fugit, ea, dolores
+                quia magnam odit, exercitationem repudiandae neque libero!
+              </p>
+              <hr />
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="footer-col1">
+              <h3>Download vores guide</h3>
+              <p>Download vores app til Apple & Android</p>
+              <div class="app-logo">
+                <img src="assets/appstore.png" alt="" />
+                <img src="assets/googleplay.png" alt="" />
+              </div>
+            </div>
+
+            <div class="footer-col2">
+              <img src="assets/logo.png" alt="logo" />
+              <p>Gå på opdagelse i hvilken ferie der bliver din næste</p>
+            </div>
+
+            <div class="footer-col3">
+              <h3>Følg us</h3>
+              <img src="assets/facebook.png" alt="facebook" class="icon" />
+              <img src="assets/insta.png" alt="insta" class="icon" />
+              <img src="assets/twitter.png" alt="twitter" class="icon" />
+              <img src="assets/tiktok.png" alt="tiktok" class="icon" />
+            </div>
+          </div>
+          <hr />
+          <p class="copy">Copyright 2023 CityVenture</p>
+        </div>
+      </div>
+    </footer>
+    <script>
+      var MenuItems = document.getElementById("MenuItems");
+      MenuItems.style.maxHeight = "0px";
+      function menutoggle() {
+        if (MenuItems.style.maxHeight == "0px") {
+          MenuItems.style.maxHeight = "200px";
+        } else {
+          MenuItems.style.maxHeight = "0px";
+        }
+      }
+    </script>
+    <script src="by.js"></script>
   </body>
 </html>
