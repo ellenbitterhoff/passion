@@ -1,8 +1,8 @@
-@media (min-width: 1000px) {
+@media (min-width: 600px) {
  
-      .img{
-        width: 40%;
-        margin: 0;
+      .forsidebillede{
+        opacity: 80%;
+        position: absolute;
       }
       
       .forside {
@@ -20,13 +20,13 @@
         object-fit: cover;
         border-radius: 5%;
         margin-top: 10%;
-    
-
+        opacity: 70%;
+  
       }
 
       .card1 h3 {
         font-size: 30px;
-        transform: translate(25%, -350%);
+        transform: translate(45%, -350%);
       
       }
 
@@ -41,11 +41,40 @@
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(5rem, 1fr));
       }
+      .card1 {
+        background-color: #fff;
+        font-family: "montserrat";
+        border-radius: 5%;
+        margin-right: 5%;
+      }
       
-    
-    
+      
+      .card1 img {
+        width: 100%;
+        object-fit: cover;
+        border-radius: 5% 5% 5% 5%;
+      }
+      
 
+}
 
+@media (min-width: 100px) {
+.card1 h3 {
+  font-size: 20px;
+  transform: translate(25%, -450%);
 
+}
 
+.card1 img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 5%;
+  margin-top: 10%;
+  opacity: 70%;
+
+}
+
+.forsidebillede{
+  opacity: 80%;
+}
 }
