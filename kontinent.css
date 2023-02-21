@@ -41,11 +41,31 @@
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(5rem, 1fr));
       }
+      .card1 {
+        background-color: #fff;
+        font-family: "montserrat";
+        border-radius: 5%;
+        margin-right: 5%;
+      }
+      .card1 h3 {
+        color: #000;
+        padding: 2% 0 0 5%;
+      }
       
-    
-    
-
-
-
+      .card1 p {
+        color: #000;
+        padding: 0 0 0 5%;
+        line-height: 1.5em;
+        margin-bottom: 5%;
+        margin-right: 5%;
+        font-family: "inter";
+      }
+      
+      .card1 img {
+        width: 100%;
+        object-fit: cover;
+        border-radius: 5% 5% 0 0;
+      }
+      
 
 }
