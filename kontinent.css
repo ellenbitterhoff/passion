@@ -1,89 +1,79 @@
 @media (min-width: 600px) {
- 
-      .forsidebillede{
-        opacity: 80%;
-        position: absolute;
-      }
-      
-      .forside {
-        padding-top: 20rem;
-        text-align: center;
-        padding-bottom: 20rem;
-      }
-      .forside h1 {
-        font-size: 60px;
-        margin-top: -10%;
-      }
+  .forsidebillede {
+    opacity: 80%;
+    position: absolute;
+  }
 
-      .byer img {
-        width: 100%;
-        object-fit: cover;
-        border-radius: 5%;
-        margin-top: 10%;
-        opacity: 70%;
-        
-  
-      }
+  .forside {
+    padding-top: 20rem;
+    text-align: center;
+    padding-bottom: 20rem;
+  }
+  .forside h1 {
+    font-size: 60px;
+    margin-top: -10%;
+  }
 
-      .byer h3 {
-        font-size: 30px;
-        text-align:center;
+  .byer img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 5%;
+    margin-top: 10%;
+    opacity: 70%;
+  }
 
-      }
+  .byer h3 {
+    font-size: 30px;
+    text-align: center;
+  }
 
-      .byer div {
-        padding: 30px;
-        font-size: 25px;
-        border-radius: 10px;
-        grid-template-columns: repeat(auto-fit,minmax(250, 1fr));
-        grid-gap: 40px;
-        margin-top: 5px;
+  .byer div {
+    padding: 30px;
+    font-size: 25px;
+    border-radius: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(250, 1fr));
+    grid-gap: 40px;
+    margin-top: 5px;
+  }
+  .card_layout {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(5rem, 1fr));
+  }
+  .byer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250, 1fr));
+    grid-gap: 40px;
+    margin-top: 40px;
+    background-color: #fff;
+    font-family: "montserrat";
+    border-radius: 5%;
+    margin-right: 5%;
+  }
 
-      }
-      .card_layout {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(5rem, 1fr));
-      }
-      .byer {
-        display: grid;
-        grid-template-columns: repeat(auto-fit,minmax(250, 1fr));
-        grid-gap: 40px;
-        margin-top: 40px;
-        background-color: #fff;
-        font-family: "montserrat";
-        border-radius: 5%;
-        margin-right: 5%;
-      }
-      
-      
-      .byer img {
-        width: 100%;
-        object-fit: cover;
-        border-radius: 5% 5% 5% 5%;
-      }
-      
-
+  .byer img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 5% 5% 5% 5%;
+  }
 }
 
 @media (min-width: 100px) {
-.byer h3 {
-  font-size: 30px;
-  
+  .byer h3 {
+    font-size: 30px;
+  }
 
-}
+  .byer img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 5%;
+    margin-top: 10%;
+    opacity: 70%;
+    height: 400px;
+  }
 
-.byer img {
-  width: 100%;
-  object-fit: cover;
-  border-radius: 5%;
-  margin-top: 10%;
-  opacity: 70%;
-
-}
-
-.forsidebillede{
-  opacity: 80%;
-}
+  .forsidebillede {
+    opacity: 80%;
+  }
 }
 
 .by-kort {
@@ -93,12 +83,9 @@
 
 .by-kort > img:nth-child(2) {
   grid-area: 1/ 1;
- }
+}
 
- .by-kort > a:nth-child(1) {
+.by-kort > a:nth-child(1) {
   grid-area: 1/ 1;
   z-index: 999;
- }
- 
-
-
+}

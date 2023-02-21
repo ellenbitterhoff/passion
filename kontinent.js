@@ -8,23 +8,44 @@ function menutoggle() {
   }
 }
 
-function hentKontinenter() {
-  fetch("kontinenter.json")
-    .then((response) => response.json())
-    .then(visKontinent);
-}
+// Get the value of the parameter from the URL
+const urlParams = new URLSearchParams(window.location.search);
+const kontinentNavn = urlParams.get("Kontinent");
+const byNavn = urlParams.get("By");
 
-const kontinentTemplate = document.querySelector("#card-template").content;
-const kontinentContainer = document.querySelector(".card_layout");
+const byTemplate = document.querySelector("#by-template").content;
+const byContainer = document.querySelector(".byer");
 
-function visKontinent(kontinent) {
-  kontinent.forEach((kontinent) => {
-    const clone = kontinentTemplate.cloneNode(true);
-    clone.querySelector("img").src = "img/" + kontinent.Billede;
-    clone.querySelector("h3").textContent = kontinent.Navn;
-    clone.querySelector("p").textContent = kontinent.Beskrivelse;
-    kontinentContainer.appendChild(clone);
+// Fetch the data
+fetch("byer.json")
+  .then((response) => response.json())
+  .then((visBy) => {
+    // Filter the data based on the value of kontinent.Navn
+    const filteredData = visBy.filter((by) => by.Kontinent === kontinentNavn);
+
+    // Display the filtered records
+    filteredData.forEach((by) => {
+      // Add code here to display each record
+      const clone = byTemplate.cloneNode(true);
+      clone.querySelector("img").src = "img/" + by.Billede;
+      clone.querySelector("a").textContent = by.Navn;
+      clone.querySelector("a").href = "by.html?By=" + by.Navn;
+      byContainer.appendChild(clone);
+    });
   });
-}
 
-hentKontinenter();
+const heroTemplate = document.querySelector("#hero-template").content;
+const heroContainer = document.querySelector("#hero-container");
+
+fetch("billeder.json")
+  .then((response) => response.json())
+  .then((heroes) => {
+    const filteredHero = heroes.filter((hero) => hero.Kontinent === kontinentNavn);
+
+    filteredHero.forEach((hero) => {
+      const heroClone = heroTemplate.cloneNode(true);
+      heroClone.querySelector("h1").textContent = hero.Kontinent;
+      heroClone.querySelector("img").src = "img/" + hero.billede;
+      heroContainer.appendChild(heroClone);
+    });
+  });
