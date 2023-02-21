@@ -24,10 +24,20 @@ function hentShopping() {
     .then(visShopping);
 }
 
-function visShopping(shoppingSteder) {
-  console.log(shoppingSteder);
-}
+// hentShopping.forEach
 
+const template = document.querySelector("#item-template").content;
+const container = document.querySelector(".category-content-container");
+
+function visShopping(shoppingSted) {
+  shoppingSted.forEach((shoppingSted) => {
+    const clone = template.cloneNode(true);
+    clone.querySelector(".category-item-header").textContent = shoppingSted.Navn;
+    clone.querySelector(".category-item-address").textContent = shoppingSted.Adresse;
+    clone.querySelector(".category-item-description").textContent = shoppingSted.Beskrivelse;
+    container.appendChild(clone);
+  });
+}
 hentShopping();
 
 // Hente restaurant data fra restdb
