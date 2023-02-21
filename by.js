@@ -8,78 +8,69 @@ function menutoggle() {
   }
 }
 
-// Hente shopping data fra restdb
-
-const shoppingUrl = "https://storbyer-7059.restdb.io/rest/shopping";
-
-const shoppingOptions = {
-  headers: {
-    "x-apikey": "63f33d07478852088da6849f",
-  },
-};
+// Hente shopping data
 
 function hentShopping() {
-  fetch(shoppingUrl, shoppingOptions)
+  fetch("shopping.json")
     .then((response) => response.json())
     .then(visShopping);
 }
 
-// hentShopping.forEach
-
-const template = document.querySelector("#item-template").content;
-const container = document.querySelector(".category-content-container");
+const shoppingTemplate = document.querySelector("#shopping-template").content;
+const shoppingContainer = document.querySelector("#shopping-container");
 
 function visShopping(shoppingSted) {
   shoppingSted.forEach((shoppingSted) => {
-    const clone = template.cloneNode(true);
+    const clone = shoppingTemplate.cloneNode(true);
     clone.querySelector(".category-item-header").textContent = shoppingSted.Navn;
     clone.querySelector(".category-item-address").textContent = shoppingSted.Adresse;
     clone.querySelector(".category-item-description").textContent = shoppingSted.Beskrivelse;
-    container.appendChild(clone);
+    shoppingContainer.appendChild(clone);
   });
 }
 hentShopping();
 
-// Hente restaurant data fra restdb
-
-const restaurantUrl = "https://storbyer-7059.restdb.io/rest/spisesteder";
-
-const restaurantOptions = {
-  headers: {
-    "x-apikey": "63f33d07478852088da6849f",
-  },
-};
+// Hente restaurant data
 
 function hentSpisesteder() {
-  fetch(restaurantUrl, restaurantOptions)
+  fetch("restauranter.json")
     .then((response) => response.json())
-    .then(visShopping);
+    .then(visSpisesteder);
 }
 
-function visSpisesteder(spiseSteder) {
-  console.log(spiseSteder);
-}
+const restaurantTemplate = document.querySelector("#shopping-template").content;
+const restaurantContainer = document.querySelector("#restaurant-container");
 
+function visSpisesteder(spiseSted) {
+  spiseSted.forEach((spiseSted) => {
+    const clone = restaurantTemplate.cloneNode(true);
+    clone.querySelector(".category-item-header").textContent = spiseSted.Navn;
+    clone.querySelector(".category-item-address").textContent = spiseSted.Adresse;
+    clone.querySelector(".category-item-description").textContent = spiseSted.Beskrivelse;
+    restaurantContainer.appendChild(clone);
+  });
+}
 hentSpisesteder();
 
-// Hente sightseeing data fra restdb
-
-const sightseeingUrl = "https://storbyer-7059.restdb.io/rest/sightseeing";
-
-const sightseeingOptions = {
-  headers: {
-    "x-apikey": "63f33d07478852088da6849f",
-  },
-};
+// Hente sightseeing data
 
 function hentSightseeing() {
-  fetch(sightseeingUrl, sightseeingOptions)
+  fetch("sightseeing.json")
     .then((response) => response.json())
-    .then(visShopping);
+    .then(visSightseeing);
 }
+
+const sightseeingTemplate = document.querySelector("#sightseeing-template").content;
+const sightseeingContainer = document.querySelector("#sightseeing-container");
 
 function visSightseeing(sightSeeing) {
-  console.log(sightSeeing);
+  sightSeeing.forEach((sightSeeing) => {
+    console.log(sightSeeing);
+    const clone = sightseeingTemplate.cloneNode(true);
+    clone.querySelector(".category-item-header").textContent = sightSeeing.Navn;
+    clone.querySelector(".category-item-address").textContent = sightSeeing.Adresse;
+    clone.querySelector(".category-item-description").textContent = sightSeeing.Beskrivelse;
+    sightseeingContainer.appendChild(clone);
+  });
 }
-
 hentSightseeing();

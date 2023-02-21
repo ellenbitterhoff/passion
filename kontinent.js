@@ -7,3 +7,24 @@ function menutoggle() {
     MenuItems.style.maxHeight = "0px";
   }
 }
+
+function hentKontinenter() {
+  fetch("kontinenter.json")
+    .then((response) => response.json())
+    .then(visKontinent);
+}
+
+const kontinentTemplate = document.querySelector("#card-template").content;
+const kontinentContainer = document.querySelector(".card_layout");
+
+function visKontinent(kontinent) {
+  kontinent.forEach((kontinent) => {
+    const clone = kontinentTemplate.cloneNode(true);
+    clone.querySelector("img").src = "img/" + kontinent.Billede;
+    clone.querySelector("h3").textContent = kontinent.Navn;
+    clone.querySelector("p").textContent = kontinent.Beskrivelse;
+    kontinentContainer.appendChild(clone);
+  });
+}
+
+hentKontinenter();

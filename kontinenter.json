@@ -1,0 +1,46 @@
+[
+  {
+    "_id": "63f24e62aa86075000065a49",
+    "Navn": "Australien",
+    "Beskrivelse": "Australien er kendt for sine spektakulære landskaber og unikke dyreliv. Udforsk de røde ørkener i Outback, snorkel ved Great Barrier Reef, eller tag på en spændende safari i den australske bush. Oplev det lokale liv i byer som Sydney og Melbourne, og nyd en frisk seafood på en af landets mange strande.",
+    "Billede": "australien-forside.webp",
+    "_version": 2,
+    "_created": "2023-02-19T16:29:22.026Z",
+    "_createdby": "jacobfriisstrand@gmail.com",
+    "_changed": "2023-02-20T12:03:25.864Z",
+    "_changedby": "jacobfriisstrand@gmail.com"
+  },
+  {
+    "_id": "63f24e62aa86075000065a47",
+    "Navn": "Asien",
+    "Beskrivelse": "Asien er verdens største kontinent og hjemsted for nogle af de mest ikoniske landemærker som Kinesiske Mur og Taj Mahal. Oplev den hektiske energi i byer som Tokyo og Bangkok, eller tag på eventyr i det frodige landskab i Indonesien og Nepal. Prøv lækker street food og udforsk spændende markeder fyldt med farverige varer.",
+    "Billede": "asien-forside.webp",
+    "_version": 2,
+    "_created": "2023-02-19T16:29:22.026Z",
+    "_createdby": "jacobfriisstrand@gmail.com",
+    "_changed": "2023-02-20T12:03:08.027Z",
+    "_changedby": "jacobfriisstrand@gmail.com"
+  },
+  {
+    "_id": "63f24e62aa86075000065a48",
+    "Navn": "Europa",
+    "Beskrivelse": "Europa har en rig historie og kultur, og tilbyder en blanding af gamle bygninger og moderne arkitektur. Besøg historiske seværdigheder som Eiffeltårnet i Paris eller Colosseum i Rom, og udforsk naturens skønhed i de schweiziske alper eller de græske øer. Nyd en bred vifte af kulinariske oplevelser fra italienske pasta og pizza til tyske pølser og øl.",
+    "Billede": "europa-forside.webp",
+    "_version": 2,
+    "_created": "2023-02-19T16:29:22.026Z",
+    "_createdby": "jacobfriisstrand@gmail.com",
+    "_changed": "2023-02-20T12:03:15.012Z",
+    "_changedby": "jacobfriisstrand@gmail.com"
+  },
+  {
+    "_id": "63f24e62aa86075000065a4a",
+    "Navn": "Amerika",
+    "Beskrivelse": "Amerika er et kontinent fyldt med forskellige kulturer og oplevelser. Fra de pulserende byer i USA til de rolige strande i det caribiske hav, har Amerika noget at tilbyde enhver rejsende. Besøg ikoniske seværdigheder som Frihedsgudinden i New York og Golden Gate-broen i San Francisco, eller tag på en spændende vandretur i de majestætiske bjerge i Sydamerika.",
+    "Billede": "amerika-forside.webp",
+    "_version": 2,
+    "_created": "2023-02-19T16:29:22.026Z",
+    "_createdby": "jacobfriisstrand@gmail.com",
+    "_changed": "2023-02-20T12:03:20.953Z",
+    "_changedby": "jacobfriisstrand@gmail.com"
+  }
+]

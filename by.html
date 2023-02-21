@@ -6,16 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="by.css" />
-    <link rel="stylesheet" href="globalstyle.css" />
     <title>Document</title>
   </head>
   <body>
     <header>
       <div class="navbar">
         <div class="logo">
-          <a href="index.html"
-            ><img src="assets/logo.png" alt="logo" width="250px"
-          /></a>
+          <a href="index.html"><img src="assets/logo.png" alt="logo" width="250px" /></a>
         </div>
         <nav>
           <ul id="MenuItems">
@@ -26,38 +23,25 @@
             <li><a href="kontakt.html">Kontakt</a></li>
           </ul>
         </nav>
-        <img
-          src="assets/menu-icon.png"
-          alt=""
-          class="menu-icon"
-          onclick="menutoggle()"
-        />
+        <img src="assets/menu-icon.png" alt="" class="menu-icon" onclick="menutoggle()" />
       </div>
     </header>
     <main>
       <div class="hero-section">
-        <img
-          class="forsidebillede"
-          src="/assets/paris.jpg"
-          alt="billede af paris"
-        />
+        <img class="forsidebillede" src="/assets/paris.jpg" alt="billede af paris" />
         <h1>Paris</h1>
       </div>
       <div class="content-container">
         <div class="category-container">
           <img class="category-photo" src="assets/shopping.jpg" alt="" />
           <h2 class="category-heading">Shopping</h2>
-          <div class="category-content-container">
-            <template id="item-template">
+          <div class="category-content-container" id="shopping-container">
+            <template id="shopping-template">
               <div class="category-content">
                 <h3 class="category-item-header">Navn på sted</h3>
                 <p class="category-item-address">Adresse</p>
                 <p class="category-item-description">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum
-                  consequatur cum accusamus hic ab velit, tempora adipisci iure
-                  minima in nostrum commodi possimus cupiditate ut incidunt. Eos
-                  est dolorem perferendis fugit, ea, dolores quia magnam odit,
-                  exercitationem repudiandae neque libero!
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum consequatur cum accusamus hic ab velit, tempora adipisci iure minima in nostrum commodi possimus cupiditate ut incidunt. Eos est dolorem perferendis fugit, ea, dolores quia magnam odit,
                 </p>
                 <hr />
               </div>
@@ -67,37 +51,33 @@
         <div class="category-container">
           <img class="category-photo" src="assets/shopping.jpg" alt="" />
           <h2 class="category-heading">Restauranter</h2>
-          <div class="category-content-container">
-            <div class="category-content">
-              <h3 class="category-item-header">Navn på sted</h3>
-              <p class="category-item-address">Adresse</p>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum
-                consequatur cum accusamus hic ab velit, tempora adipisci iure
-                minima in nostrum commodi possimus cupiditate ut incidunt. Eos
-                est dolorem perferendis fugit, ea, dolores quia magnam odit,
-                exercitationem repudiandae neque libero!
-              </p>
-              <hr />
-            </div>
+          <div class="category-content-container" id="restaurant-container">
+            <template id="restaurant-template">
+              <div class="category-content">
+                <h3 class="category-item-header">Navn på sted</h3>
+                <p class="category-item-address">Adresse</p>
+                <p class="category-item-description">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum consequatur cum accusamus hic ab velit, tempora adipisci iure minima in nostrum commodi possimus cupiditate ut incidunt. Eos est dolorem perferendis fugit, ea, dolores quia magnam odit,
+                </p>
+                <hr />
+              </div>
+            </template>
           </div>
         </div>
         <div class="category-container">
           <img class="category-photo" src="assets/shopping.jpg" alt="" />
           <h2 class="category-heading">Sightseeing</h2>
-          <div class="category-content-container">
-            <div class="category-content">
-              <h3 class="category-item-header">Navn på sted</h3>
-              <p class="category-item-address">Adresse</p>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum
-                consequatur cum accusamus hic ab velit, tempora adipisci iure
-                minima in nostrum commodi possimus cupiditate ut incidunt. Eos
-                est dolorem perferendis fugit, ea, dolores quia magnam odit,
-                exercitationem repudiandae neque libero!
-              </p>
-              <hr />
-            </div>
+          <div class="category-content-container" id="sightseeing-container">
+            <template id="sightseeing-template">
+              <div class="category-content">
+                <h3 class="category-item-header">Navn på sted</h3>
+                <p class="category-item-address">Adresse</p>
+                <p class="category-item-description">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum consequatur cum accusamus hic ab velit, tempora adipisci iure minima in nostrum commodi possimus cupiditate ut incidunt. Eos est dolorem perferendis fugit, ea, dolores quia magnam odit,
+                </p>
+                <hr />
+              </div>
+            </template>
           </div>
         </div>
       </div>
