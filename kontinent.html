@@ -44,14 +44,12 @@
         </div>
         <div class="byer">
           <div class="card_layout">
-            <div class="by-kort">
-              <a href="by.html"><h3>New York</h3></a>
-              <img src="assets/amerika.jpg" alt="amerika" />
-            </div>
-            <div class="by-kort">
-              <a href="by.html"> <h3>Mexico City</h3></a>
-              <img src="assets/mexico.jpg" alt="mexico" />
-            </div>
+            <template id="by-template">
+              <div class="by-kort">
+                <a href="by.html"><h3>New York</h3></a>
+                <img src="assets/amerika.jpg" alt="amerika" />
+              </div>
+            </template>
           </div>
     </main>
     <footer>
@@ -84,7 +82,7 @@
         </div>
       </div>
     </footer>
-    <script src="kontinent.js">
+    <script src="byside.js">
       var MenuItems = document.getElementById("MenuItems");
       MenuItems.style.maxHeight = "0px";
       function menutoggle() {
