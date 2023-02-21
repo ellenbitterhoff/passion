@@ -8,7 +8,7 @@ function menutoggle() {
   }
 }
 
-// Hente shopping data fra restdb
+// Hente shopping data
 
 function hentShopping() {
   fetch("shopping.json")
@@ -30,7 +30,7 @@ function visShopping(shoppingSted) {
 }
 hentShopping();
 
-// Hente restaurant data fra restdb
+// Hente restaurant data
 
 function hentSpisesteder() {
   fetch("restauranter.json")
@@ -52,7 +52,7 @@ function visSpisesteder(spiseSted) {
 }
 hentSpisesteder();
 
-// Hente sightseeing data fra restdb
+// Hente sightseeing data
 
 function hentSightseeing() {
   fetch("sightseeing.json")

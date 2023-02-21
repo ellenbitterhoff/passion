@@ -8,22 +8,23 @@ function menutoggle() {
   }
 }
 
-const kontinentUrl = "https://storbyer-7059.restdb.io/rest/kontinenter";
-
-const kontinentOptions = {
-  headers: {
-    "x-apikey": "63f33d07478852088da6849f",
-  },
-};
-
 function hentKontinenter() {
-  fetch(kontinentUrl, kontinentOptions)
+  fetch("kontinenter.json")
     .then((response) => response.json())
     .then(visKontinent);
 }
 
+const kontinentTemplate = document.querySelector("#card-template").content;
+const kontinentContainer = document.querySelector(".card_layout");
+
 function visKontinent(kontinent) {
-  console.log(kontinent);
+  kontinent.forEach((kontinent) => {
+    const clone = kontinentTemplate.cloneNode(true);
+    clone.querySelector("img").src = "img/" + kontinent.Billede;
+    clone.querySelector("h3").textContent = kontinent.Navn;
+    clone.querySelector("p").textContent = kontinent.Beskrivelse;
+    kontinentContainer.appendChild(clone);
+  });
 }
 
 hentKontinenter();
