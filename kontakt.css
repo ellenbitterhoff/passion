@@ -36,7 +36,7 @@ button {
 .billede {
   margin-left: auto;
   margin-right: auto;
-  width: 100%;
+  width: 90%;
 }
 
 .opbillede {
@@ -44,12 +44,29 @@ button {
   border-radius: 8px;
 }
 
+.forside {
+  padding-top: 12rem;
+  text-align: center;
+  padding-bottom: 22rem;
+}
+
+.forsidebillede {
+  width: 100%;
+  object-fit: cover;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
 /* Tekst */
 
 h1 {
   font-size: 3rem;
   text-align: center;
-  padding: 10%;
+  padding: 5%;
 }
 
 h2 {

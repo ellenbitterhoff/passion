@@ -12,7 +12,7 @@
     <header>
       <div class="navbar">
         <div class="logo">
-          <a href="index.html"><img src="assets/logo.png" alt="logo" width="250px" /></a>
+          <a href="index.html"><img src="assets/logo.png" alt="logo" /></a>
         </div>
         <nav>
           <ul id="MenuItems">
@@ -28,8 +28,11 @@
       </div>
     </header>
     <main>
-      <!-- <img src="assets/baggrund baggrund.jpg" alt="forsidebillede" class="opbillede" /> -->
-      <h1>Kontakt</h1>
+      <div class="forside">
+        <h1>Kontakt</h1>
+      </div>
+      <img src="assets/baggrund baggrund.jpg" alt="forsidebillede" class="forsidebillede" />
+      <!-- <h1>Kontakt</h1> -->
       <div class="grid">
         <form class="checklist">
           <h3>Har du en anbefaling til hvor vi skal hen næste gang, så skriv en anbefaling herunder.</h3>
@@ -38,9 +41,8 @@
           <label for="email">E-mail</label>
           <input placeholder="fx sara1234@email.com" id="email" name="email" type="email" />
           <label for="first-name"> By</label>
-          <input placeholder="fx Louisa" id="first-name" name="fname" type="text" />
           <label for="tekst">Hvorfor skal vi besøge denne by? </label>
-          <textarea ="tekst" id="tekst"> </textarea>
+          <textarea id="tekst"> </textarea>
           <button type="submit">Indsend dit svar her</button>
         </form>
 
