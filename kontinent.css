@@ -1,10 +1,8 @@
 @media (min-width: 600px) {
  
-      .img{
-        width: 40%;
-        margin: 0;
-
-
+      .forsidebillede{
+        opacity: 80%;
+        position: absolute;
       }
       
       .forside {
@@ -63,7 +61,7 @@
 @media (min-width: 100px) {
 .card1 h3 {
   font-size: 20px;
-  transform: translate(25%, -350%);
+  transform: translate(25%, -450%);
 
 }
 
@@ -74,5 +72,9 @@
   margin-top: 10%;
   opacity: 70%;
 
+}
+
+.forsidebillede{
+  opacity: 80%;
 }
 }
