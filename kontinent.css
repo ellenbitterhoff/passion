@@ -3,6 +3,8 @@
       .img{
         width: 40%;
         margin: 0;
+
+
       }
       
       .forside {
@@ -20,6 +22,7 @@
         object-fit: cover;
         border-radius: 5%;
         margin-top: 10%;
+        opacity: 70%;
     
 
       }
