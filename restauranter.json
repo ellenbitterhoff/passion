@@ -1,0 +1,222 @@
+[
+  {
+    "_id": "63ef90e8aa86075000061942",
+    "Navn": "Julo",
+    "Adresse": "38, bis Bd Voltaire, 75011 Paris, Frankrig",
+    "Beskrivelse": "JULO er en restaurant og cocktailbar, venlig, designet og tænkt til venner, familier eller blot for alle, der vil have det sjovt.",
+    "By": "Paris",
+    "_version": 1,
+    "_created": "2023-02-17T14:36:24.789Z",
+    "_createdby": "jacobfriisstrand@gmail.com",
+    "_changed": "2023-02-17T14:36:24.789Z"
+  },
+  {
+    "_id": "63ef90e8aa86075000061943",
+    "Navn": "Deviant",
+    "Adresse": "39 R. des Petites Écuries, 75010 Paris, Frankrig",
+    "Beskrivelse": "Sharing is caring plates. Cocktails that make you go “oooooh”.Wines that make you go “aaaaah”.",
+    "By": "Paris",
+    "_version": 1,
+    "_created": "2023-02-17T14:36:24.789Z",
+    "_createdby": "jacobfriisstrand@gmail.com",
+    "_changed": "2023-02-17T14:36:24.789Z"
+  },
+  {
+    "_id": "63ef90e8aa86075000061944",
+    "Navn": "Loulou",
+    "Adresse": "107 Rue de Rivoli, 75001 Paris, Frankrig",
+    "Beskrivelse": "LOULOU, den nye restaurant på Museum of Decorative Arts, har en unik beliggenhed og privilegerede omgivelser i hjertet af Louvre-paladset",
+    "By": "Paris",
+    "_version": 1,
+    "_created": "2023-02-17T14:36:24.789Z",
+    "_createdby": "jacobfriisstrand@gmail.com",
+    "_changed": "2023-02-17T14:36:24.789Z"
+  },
+  {
+    "_id": "63ef90e8aa86075000061945",
+    "Navn": "Kong",
+    "Adresse": "1 Rue du Pont Neuf, 75001 Paris, Frankrig",
+    "Beskrivelse": "Atmosfæren i KONG bar kombinerer den intime karakter af en cocktailbar med raffinement og elegance fra en paladsbar.",
+    "By": "Paris",
+    "_version": 1,
+    "_created": "2023-02-17T14:36:24.789Z",
+    "_createdby": "jacobfriisstrand@gmail.com",
+    "_changed": "2023-02-17T14:36:24.789Z"
+  },
+  {
+    "_id": "63ef90e8aa86075000061946",
+    "Navn": "Ober Mamma",
+    "Adresse": "107 Bd Richard-Lenoir, 75011 Paris, Frankrig",
+    "Beskrivelse": "Ober Mammas idé var at nyde gode sexede La Botte-produkter på dette sted med lister og store kunstneriske fresker.",
+    "By": "Paris",
+    "_version": 1,
+    "_created": "2023-02-17T14:36:24.789Z",
+    "_createdby": "jacobfriisstrand@gmail.com",
+    "_changed": "2023-02-17T14:36:24.789Z"
+  },
+  {
+    "_id": "63ef90e8aa86075000061947",
+    "Navn": "Chiltern Firehouse",
+    "Adresse": "1 Chiltern St, London W1U 7PA, Storbritannien",
+    "Beskrivelse": "It’s easy to be cynical about celebrity-driven restaurants but this one has substance. The atmosphere remains glamorous and contagiously fun and it’s all run with understated efficiency.",
+    "By": "London",
+    "_version": 1,
+    "_created": "2023-02-17T14:36:24.789Z",
+    "_createdby": "jacobfriisstrand@gmail.com",
+    "_changed": "2023-02-17T14:36:24.789Z"
+  },
+  {
+    "_id": "63ef90e8aa86075000061948",
+    "Navn": "Granger & Co",
+    "Adresse": "Granger & Co.,175 Westbourne Gr, Notting Hill, Greater London, W11 2SB",
+    "Beskrivelse": "Every Bill Granger restaurant reflects the spirit we like to think of as 'Australian': sunny, easy-going and generous.",
+    "By": "London",
+    "_version": 1,
+    "_created": "2023-02-17T14:36:24.789Z",
+    "_createdby": "jacobfriisstrand@gmail.com",
+    "_changed": "2023-02-17T14:36:24.789Z"
+  },
+  {
+    "_id": "63ef90e8aa86075000061949",
+    "Navn": "Sketch",
+    "Adresse": "9 Conduit St, London W1S 2XG, Storbritannien",
+    "Beskrivelse": "Sketch in Mayfair, London is a destination for food, drinks, music & art, comprising an artist conceived gastro-brasserie restaurant.",
+    "By": "London",
+    "_version": 1,
+    "_created": "2023-02-17T14:36:24.789Z",
+    "_createdby": "jacobfriisstrand@gmail.com",
+    "_changed": "2023-02-17T14:36:24.789Z"
+  },
+  {
+    "_id": "63ef90e8aa8607500006194a",
+    "Navn": "Il Baretto",
+    "Adresse": "43 Blandford St, London W1U 7HF, Storbritannien",
+    "Beskrivelse": "Il Baretto is located in the heart of Central London, between Marylebone High Street and Baker Street. Since its opening in December 2008, it has built its reputation with a simple and authentic Italian menu which draws influence from the speciality dishes and produce of regional Italy.",
+    "By": "London",
+    "_version": 1,
+    "_created": "2023-02-17T14:36:24.789Z",
+    "_createdby": "jacobfriisstrand@gmail.com",
+    "_changed": "2023-02-17T14:36:24.789Z"
+  },
+  {
+    "_id": "63ef90e8aa8607500006194b",
+    "Navn": "Coya",
+    "Adresse": "118 Piccadilly, London W1J 7NW, Storbritannien",
+    "Beskrivelse": "COYA celebrates the spirit of Latin America through exceptional Peruvian food, innovative Pisco infusions, Latin American rhythms and contemporary art.",
+    "By": "London",
+    "_version": 1,
+    "_created": "2023-02-17T14:36:24.789Z",
+    "_createdby": "jacobfriisstrand@gmail.com",
+    "_changed": "2023-02-17T14:36:24.789Z"
+  },
+  {
+    "_id": "63ef90e8aa8607500006194c",
+    "Navn": "Shiso Burger",
+    "Adresse": "Auguststrasse 29c, 10625 Berlin",
+    "Beskrivelse": "Dette burgersted byder på en smagsrejse ud over det sædvanlige. Hver burger er en symfoni af unikke smagskombinationer, der får tænderne til at danse af begejstring. Der er ikke noget bedre end at slå sig ned i den afslappede atmosfære og nyde en af Shiso Burgers signaturburgere.",
+    "By": "Berlin",
+    "_version": 1,
+    "_created": "2023-02-17T14:36:24.789Z",
+    "_createdby": "jacobfriisstrand@gmail.com",
+    "_changed": "2023-02-17T14:36:24.789Z"
+  },
+  {
+    "_id": "63ef90e8aa8607500006194d",
+    "Navn": "Kuchi Kant",
+    "Adresse": "Kantstrasse 30, 10623 Berlin",
+    "Beskrivelse": "Hvis du leder efter en autentisk asiatisk oplevelse, så har du fundet det rigtige sted. Kuchi Kant serverer velsmagende retter, der får dine smagsløg til at synge af begejstring. Den hyggelige atmosfære vil få dig til at føle dig som om du er på en kulinarisk rejse til Asiens lande.",
+    "By": "Berlin",
+    "_version": 1,
+    "_created": "2023-02-17T14:36:24.789Z",
+    "_createdby": "jacobfriisstrand@gmail.com",
+    "_changed": "2023-02-17T14:36:24.789Z"
+  },
+  {
+    "_id": "63ef90e8aa8607500006194e",
+    "Navn": "A Never Ending Love Story",
+    "Adresse": "Kantstraße 25, 10623 Berlin",
+    "Beskrivelse": "A Never Ending Love Story, der beriger caféscenen i Vestberlin, byder på kaffe i barista kvalitet, et bredt udvalg af te og frisklavede smoothies samt et sjovt udvalg af lækre snacks og tilbehør. Den rosa-tonede indretning komplimenteres den varme velkomst og kærligt tilberedte mad og drikkevarer. Gourmetpandekager, fransk toast og røræg-varianter er blot nogle af de lækre retter, der bliver serveret.",
+    "By": "Berlin",
+    "_version": 1,
+    "_created": "2023-02-17T14:36:24.789Z",
+    "_createdby": "jacobfriisstrand@gmail.com",
+    "_changed": "2023-02-17T14:36:24.789Z"
+  },
+  {
+    "_id": "63ef90e8aa8607500006194f",
+    "Navn": "STANDARD",
+    "Adresse": "Templiner Str. 7, 10119 Berlin",
+    "Beskrivelse": "Her får du en kop kaffe, der er så god, at du vil ønske, du kunne nyde den for evigt. Caféen serverer kun de bedste bønner, der er nøje udvalgt for deres høje kvalitet og smagfulde profil. Lad dig friste af et udvalg af velsmagende småkager, mens du nyder en pause i det afslappede miljø.",
+    "By": "Berlin",
+    "_version": 1,
+    "_created": "2023-02-17T14:36:24.789Z",
+    "_createdby": "jacobfriisstrand@gmail.com",
+    "_changed": "2023-02-17T14:36:24.789Z"
+  },
+  {
+    "_id": "63ef90e8aa86075000061950",
+    "Navn": "NGO KIM PAK",
+    "Adresse": "Schlüterstrasse 22-23, 10625 Berlin",
+    "Beskrivelse": "Hvis du er en fan af koreansk mad, vil du elske NGO KIM PAK. Restauranten serverer velsmagende retter, der er inspireret af den koreanske kultur. Du vil føle dig som om du er på en kulinarisk rejse til Sydkorea, mens du nyder den hyggelige atmosfære og autentiske smagsoplevelser.",
+    "By": "Berlin",
+    "_version": 1,
+    "_created": "2023-02-17T14:36:24.789Z",
+    "_createdby": "jacobfriisstrand@gmail.com",
+    "_changed": "2023-02-17T14:36:24.789Z"
+  },
+  {
+    "_id": "63ef90e8aa86075000061951",
+    "Navn": "Lardo",
+    "Adresse": "Agustín Melgar 6, Colonia Condesa, Cuauhtémoc, 06140 Ciudad de México",
+    "Beskrivelse": "Det gastronomiske forslag i Lardo fokuserer på kvaliteten af ​​ingredienserne gennem enkle tilberedninger.",
+    "By": "Mexico City",
+    "_version": 1,
+    "_created": "2023-02-17T14:36:24.789Z",
+    "_createdby": "jacobfriisstrand@gmail.com",
+    "_changed": "2023-02-17T14:36:24.789Z"
+  },
+  {
+    "_id": "63ef90e8aa86075000061952",
+    "Navn": "Maximo",
+    "Adresse": "Av. Álvaro Obregón 65 Bis, Roma Nte., Cuauhtémoc, 06700 Ciudad de México",
+    "Beskrivelse": "Siden vores start har vores kulinariske rejse altid fokuseret på princippet om et køkken, der adskiller det bedste fra det aktuelle produkt. Vores er et bæredygtigt køkken, med årstidens nationale råvarer af bedste kvalitet, baseret på et tæt og åbent forhold til vores leverandører.",
+    "By": "Mexico City",
+    "_version": 1,
+    "_created": "2023-02-17T14:36:24.789Z",
+    "_createdby": "jacobfriisstrand@gmail.com",
+    "_changed": "2023-02-17T14:36:24.789Z"
+  },
+  {
+    "_id": "63ef90e8aa86075000061953",
+    "Navn": "Rosetta",
+    "Adresse": "Colima 166, Roma Nte., Cuauhtémoc, 06700 Ciudad de México, CDMX",
+    "Beskrivelse": "Rosetta er det gastronomiske forslag fra den mexicanske kok Elena Reygadas, en restaurant, der åbnede i 2010 i Roma-kvarteret, Mexico City.",
+    "By": "Mexico City",
+    "_version": 1,
+    "_created": "2023-02-17T14:36:24.789Z",
+    "_createdby": "jacobfriisstrand@gmail.com",
+    "_changed": "2023-02-17T14:36:24.789Z"
+  },
+  {
+    "_id": "63ef90e8aa86075000061954",
+    "Navn": "La Ventana",
+    "Adresse": "",
+    "Beskrivelse": "La Ventana er en semi-autentisk taqueria fra kokken Jeremy Sewall og hans team. Vi elsker gode råvarer og vi elsker gode tacos.",
+    "By": "Mexico City",
+    "_version": 1,
+    "_created": "2023-02-17T14:36:24.789Z",
+    "_createdby": "jacobfriisstrand@gmail.com",
+    "_changed": "2023-02-17T14:36:24.789Z"
+  },
+  {
+    "_id": "63ef90e8aa86075000061955",
+    "Navn": "Pujol",
+    "Adresse": "Tennyson 133, Polanco, Polanco IV Secc, Miguel Hidalgo, 11550 Ciudad de México",
+    "Beskrivelse": "Pujol er en mexicansk restaurant udpeget af Wall Street Journal som den bedste i Mexico City. Restauranten drives af kokken Enrique Olvera, som er uddannet på Culinary Institute of America.",
+    "By": "Mexico City",
+    "_version": 1,
+    "_created": "2023-02-17T14:36:24.789Z",
+    "_createdby": "jacobfriisstrand@gmail.com",
+    "_changed": "2023-02-17T14:36:24.789Z"
+  }
+]

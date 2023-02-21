@@ -53,6 +53,8 @@ img {
 
 .hero-section h1 {
   padding-top: 20vh;
+  font-size: 40px;
+  text-transform: uppercase;
 }
 
 .hero-section img,
@@ -65,7 +67,7 @@ h1 {
 }
 
 .content-container {
-  margin-top: 40rem;
+  margin-top: 55vh;
   padding-inline: 1rem;
   max-width: 1400px;
   margin-inline: auto;

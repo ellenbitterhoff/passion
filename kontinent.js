@@ -7,3 +7,23 @@ function menutoggle() {
     MenuItems.style.maxHeight = "0px";
   }
 }
+
+const kontinentUrl = "https://storbyer-7059.restdb.io/rest/kontinenter";
+
+const kontinentOptions = {
+  headers: {
+    "x-apikey": "63f33d07478852088da6849f",
+  },
+};
+
+function hentKontinenter() {
+  fetch(kontinentUrl, kontinentOptions)
+    .then((response) => response.json())
+    .then(visKontinent);
+}
+
+function visKontinent(kontinent) {
+  console.log(kontinent);
+}
+
+hentKontinenter();

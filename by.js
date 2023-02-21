@@ -10,50 +10,34 @@ function menutoggle() {
 
 // Hente shopping data fra restdb
 
-const shoppingUrl = "https://storbyer-7059.restdb.io/rest/shopping";
-
-const shoppingOptions = {
-  headers: {
-    "x-apikey": "63f33d07478852088da6849f",
-  },
-};
-
 function hentShopping() {
-  fetch(shoppingUrl, shoppingOptions)
+  fetch("shopping.json")
     .then((response) => response.json())
     .then(visShopping);
 }
-
-// hentShopping.forEach
 
 const template = document.querySelector("#item-template").content;
 const container = document.querySelector(".category-content-container");
 
 function visShopping(shoppingSted) {
   shoppingSted.forEach((shoppingSted) => {
-    const clone = template.cloneNode(true);
-    clone.querySelector(".category-item-header").textContent = shoppingSted.Navn;
-    clone.querySelector(".category-item-address").textContent = shoppingSted.Adresse;
-    clone.querySelector(".category-item-description").textContent = shoppingSted.Beskrivelse;
-    container.appendChild(clone);
+    if (!shoppingSted.billede) {
+      const clone = template.cloneNode(true);
+      clone.querySelector(".category-item-header").textContent = shoppingSted.Navn;
+      clone.querySelector(".category-item-address").textContent = shoppingSted.Adresse;
+      clone.querySelector(".category-item-description").textContent = shoppingSted.Beskrivelse;
+      container.appendChild(clone);
+    }
   });
 }
 hentShopping();
 
 // Hente restaurant data fra restdb
 
-const restaurantUrl = "https://storbyer-7059.restdb.io/rest/spisesteder";
-
-const restaurantOptions = {
-  headers: {
-    "x-apikey": "63f33d07478852088da6849f",
-  },
-};
-
 function hentSpisesteder() {
-  fetch(restaurantUrl, restaurantOptions)
+  fetch("restauranter.json")
     .then((response) => response.json())
-    .then(visShopping);
+    .then(visSpisesteder);
 }
 
 function visSpisesteder(spiseSteder) {
@@ -64,18 +48,10 @@ hentSpisesteder();
 
 // Hente sightseeing data fra restdb
 
-const sightseeingUrl = "https://storbyer-7059.restdb.io/rest/sightseeing";
-
-const sightseeingOptions = {
-  headers: {
-    "x-apikey": "63f33d07478852088da6849f",
-  },
-};
-
 function hentSightseeing() {
-  fetch(sightseeingUrl, sightseeingOptions)
+  fetch("sightseeing.json")
     .then((response) => response.json())
-    .then(visShopping);
+    .then(visSightseeing);
 }
 
 function visSightseeing(sightSeeing) {
