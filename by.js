@@ -16,18 +16,16 @@ function hentShopping() {
     .then(visShopping);
 }
 
-const template = document.querySelector("#item-template").content;
-const container = document.querySelector(".category-content-container");
+const shoppingTemplate = document.querySelector("#shopping-template").content;
+const shoppingContainer = document.querySelector("#shopping-container");
 
 function visShopping(shoppingSted) {
   shoppingSted.forEach((shoppingSted) => {
-    if (!shoppingSted.billede) {
-      const clone = template.cloneNode(true);
-      clone.querySelector(".category-item-header").textContent = shoppingSted.Navn;
-      clone.querySelector(".category-item-address").textContent = shoppingSted.Adresse;
-      clone.querySelector(".category-item-description").textContent = shoppingSted.Beskrivelse;
-      container.appendChild(clone);
-    }
+    const clone = shoppingTemplate.cloneNode(true);
+    clone.querySelector(".category-item-header").textContent = shoppingSted.Navn;
+    clone.querySelector(".category-item-address").textContent = shoppingSted.Adresse;
+    clone.querySelector(".category-item-description").textContent = shoppingSted.Beskrivelse;
+    shoppingContainer.appendChild(clone);
   });
 }
 hentShopping();
@@ -40,10 +38,18 @@ function hentSpisesteder() {
     .then(visSpisesteder);
 }
 
-function visSpisesteder(spiseSteder) {
-  console.log(spiseSteder);
-}
+const restaurantTemplate = document.querySelector("#shopping-template").content;
+const restaurantContainer = document.querySelector("#restaurant-container");
 
+function visSpisesteder(spiseSted) {
+  spiseSted.forEach((spiseSted) => {
+    const clone = restaurantTemplate.cloneNode(true);
+    clone.querySelector(".category-item-header").textContent = spiseSted.Navn;
+    clone.querySelector(".category-item-address").textContent = spiseSted.Adresse;
+    clone.querySelector(".category-item-description").textContent = spiseSted.Beskrivelse;
+    restaurantContainer.appendChild(clone);
+  });
+}
 hentSpisesteder();
 
 // Hente sightseeing data fra restdb
@@ -54,8 +60,17 @@ function hentSightseeing() {
     .then(visSightseeing);
 }
 
-function visSightseeing(sightSeeing) {
-  console.log(sightSeeing);
-}
+const sightseeingTemplate = document.querySelector("#sightseeing-template").content;
+const sightseeingContainer = document.querySelector("#sightseeing-container");
 
+function visSightseeing(sightSeeing) {
+  sightSeeing.forEach((sightSeeing) => {
+    console.log(sightSeeing);
+    const clone = sightseeingTemplate.cloneNode(true);
+    clone.querySelector(".category-item-header").textContent = sightSeeing.Navn;
+    clone.querySelector(".category-item-address").textContent = sightSeeing.Adresse;
+    clone.querySelector(".category-item-description").textContent = sightSeeing.Beskrivelse;
+    sightseeingContainer.appendChild(clone);
+  });
+}
 hentSightseeing();
