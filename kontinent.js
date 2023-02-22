@@ -40,11 +40,11 @@ const heroContainer = document.querySelector("#hero-container");
 fetch("billeder.json")
   .then((response) => response.json())
   .then((heroes) => {
-    const filteredHero = heroes.filter((hero) => hero.Kontinent === kontinentNavn);
+    const filteredHero = heroes.filter((hero) => hero.By === byNavn);
 
     filteredHero.forEach((hero) => {
       const heroClone = heroTemplate.cloneNode(true);
-      heroClone.querySelector("h1").textContent = hero.Kontinent;
+      heroClone.querySelector("h1").textContent = hero.By;
       heroClone.querySelector("img").src = "img/" + hero.billede;
       heroContainer.appendChild(heroClone);
     });
