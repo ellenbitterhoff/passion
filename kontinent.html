@@ -4,18 +4,16 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css"/>
-    <link rel="stylesheet" href="kontinent.css"/>
-    <link rel="stylesheet" href="globalstyle.css"/>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="kontinent.css" />
+    <link rel="stylesheet" href="globalstyle.css" />
     <title>Amerika</title>
   </head>
   <body>
     <header>
       <div class="navbar">
         <div class="logo">
-          <a href="index.html"
-            ><img src="assets/logo.png" alt="logo" width="250px"
-          /></a>
+          <a href="index.html"><img src="assets/logo.png" alt="logo" width="250px" /></a>
         </div>
         <nav>
           <ul id="MenuItems">
@@ -26,33 +24,28 @@
             <li><a href="kontakt.html">Kontakt</a></li>
           </ul>
         </nav>
-        <img
-          src="assets/menu-icon.png"
-          alt=""
-          class="menu-icon"
-          onclick="menutoggle()"
-        />
+        <img src="assets/menu-icon.png" alt="" class="menu-icon" onclick="menutoggle()" />
       </div>
     </header>
     <main>
-        <div id="hero-container">
-          <template id="hero-template">
-            <img
-              src="img/amerika-forside.webp" alt="forsidebillede"
-              class="forsidebillede"/>
-            <div class="forside">
-              <h1>AMERIKA</h1>
+      <div id="continent-container">
+        <template id="continent-template">
+          <img src="img/amerika-forside.webp" alt="forsidebillede" class="forsidebillede" />
+          <div class="forside">
+            <h1>AMERIKA</h1>
+          </div>
+        </template>
+      </div>
+      <div class="byer">
+        <div class="card_layout">
+          <template id="by-template">
+            <div class="by-kort">
+              <a href="by.html"><h3>New York</h3></a>
+              <img src="assets/amerika.jpg" alt="amerika" />
+            </div>
           </template>
-          </div>
-        <div class="byer">
-          <div class="card_layout">
-            <template id="by-template">
-              <div class="by-kort">
-                <a href="by.html"><h3>New York</h3></a>
-                <img src="assets/amerika.jpg" alt="amerika" />
-              </div>
-            </template>
-          </div>
+        </div>
+      </div>
     </main>
     <footer>
       <div class="footer">
@@ -82,7 +75,7 @@
           <p class="copy">Copyright 2023 CityVenture</p>
         </div>
       </div>
-      </footer>
-      <script src="kontinent.js"></script>
+    </footer>
+    <script src="kontinent.js"></script>
   </body>
 </html>

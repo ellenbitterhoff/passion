@@ -34,18 +34,19 @@ fetch("byer.json")
     });
   });
 
-const heroTemplate = document.querySelector("#hero-template").content;
-const heroContainer = document.querySelector("#hero-container");
+const continentTemplate = document.querySelector("#continent-template").content;
+const continentContainer = document.querySelector("#continent-container");
 
-fetch("billeder.json")
+fetch("kontinenter.json")
   .then((response) => response.json())
   .then((heroes) => {
-    const filteredHero = heroes.filter((hero) => hero.By === byNavn);
+    console.log(heroes);
+    const filteredHero = heroes.filter((hero) => hero.Navn === kontinentNavn);
 
     filteredHero.forEach((hero) => {
-      const heroClone = heroTemplate.cloneNode(true);
-      heroClone.querySelector("h1").textContent = hero.By;
-      heroClone.querySelector("img").src = "img/" + hero.billede;
-      heroContainer.appendChild(heroClone);
+      const heroClone = continentTemplate.cloneNode(true);
+      heroClone.querySelector("h1").textContent = hero.Navn;
+      heroClone.querySelector("img").src = "img/" + hero.Billede;
+      continentContainer.appendChild(heroClone);
     });
   });
