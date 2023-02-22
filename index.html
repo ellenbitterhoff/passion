@@ -16,10 +16,12 @@
         </div>
         <nav>
           <ul id="MenuItems">
-            <li><a href="kontinent.html">Asien</a></li>
-            <li><a href="kontinent.html">Australien</a></li>
-            <li><a href="kontinent.html">Amerika</a></li>
-            <li><a href="kontinent.html">Europa</a></li>
+            <template id="continent-links">
+              <li><a href="kontinent.html">Asien</a></li>
+              <li><a href="kontinent.html">Australien</a></li>
+              <li><a href="kontinent.html">Amerika</a></li>
+              <li><a href="kontinent.html">Europa</a></li>
+            </template>
             <li><a href="kontakt.html">Kontakt</a></li>
           </ul>
         </nav>
@@ -38,7 +40,7 @@
         <div class="card_layout">
           <template id="card-template">
             <div class="card1">
-              <img src="assets/asien.jpg" alt="asien" />
+              <img src="" alt="asien" />
               <h3>ASIEN</h3>
               <p>Asien er verdens største kontinent, med et areal på cirka 44,58 millioner km². Kontinentet grænser mod nord, øst og syd til verdenshavet: Det Arktiske hav, Stillehavet og Det Indiske Ocean.</p>
               <a href="kontinent.html" class="secondary_button">Se byer</a>
@@ -89,5 +91,6 @@
       }
     </script>
     <script src="index.js"></script>
+    <script src="menu.js"></script>
   </body>
 </html>

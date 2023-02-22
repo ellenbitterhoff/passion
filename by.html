@@ -16,10 +16,12 @@
         </div>
         <nav>
           <ul id="MenuItems">
-            <li><a href="kontinent.html">Asien</a></li>
-            <li><a href="kontinent.html">Australien</a></li>
-            <li><a href="kontinent.html">Amerika</a></li>
-            <li><a href="kontinent.html">Europa</a></li>
+            <template id="continent-links">
+              <li><a href="kontinent.html">Asien</a></li>
+              <li><a href="kontinent.html">Australien</a></li>
+              <li><a href="kontinent.html">Amerika</a></li>
+              <li><a href="kontinent.html">Europa</a></li>
+            </template>
             <li><a href="kontakt.html">Kontakt</a></li>
           </ul>
         </nav>
@@ -29,7 +31,7 @@
     <main>
       <div class="hero-section" id="hero-container">
         <template id="hero-template">
-          <img class="forsidebillede" src="/assets/paris.jpg" alt="billede af paris" />
+          <img class="forsidebillede" src="" alt="billede af paris" />
           <h1>Paris</h1>
         </template>
       </div>
@@ -127,5 +129,6 @@
       }
     </script>
     <script src="by.js"></script>
+    <script src="menu.js"></script>
   </body>
 </html>
