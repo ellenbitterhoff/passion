@@ -274,6 +274,6 @@ ul {
 @media only screen and (max-width: 600px) {
 }
 
-img:not(.logo, .icon) {
+img:not(.logo, .icon, .category-photo) {
   opacity: 0.6;
 }

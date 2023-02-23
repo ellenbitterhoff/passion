@@ -102,13 +102,20 @@ const shoppingImageContainer = document.querySelector("#category-shopping-contai
 fetch("billeder.json")
   .then((response) => response.json())
   .then((images) => {
-    const filteredImage = images.filter((image) => image.By === byNavn);
+    const addedImages = []; // Array til at holde styr på de tilføjede billeder
 
-    filteredImage.forEach((image) => {
-      const imageClone = shoppingImageTemplate.cloneNode(true);
-      imageClone.querySelector("img").src = "img/" + `${image.By}` + "-shopping.webp";
-      shoppingImageContainer.appendChild(imageClone);
-    });
+    for (let i = 0; i < images.length; i++) {
+      // Loop gennem hver element i images arrayet
+      const image = images[i]; // Gem det aktuelle billede i en variabel
+
+      // Tjek om billedet matcher den specificerede By-værdi og ikke allerede er blevet tilføjet
+      if (image.By === byNavn && !addedImages.includes(image.By)) {
+        const imageClone = shoppingImageTemplate.cloneNode(true); // Klone shoppingImageTemplate
+        imageClone.querySelector("img").src = "img/" + `${image.By}` + "-shopping.webp"; // Sæt src-attributten til det passende billede
+        shoppingImageContainer.appendChild(imageClone); // Tilføj klonen til shoppingImageContainer
+        addedImages.push(image.By); // Tilføj By-værdien til addedImages arrayet for at markere at billedet er blevet tilføjet
+      }
+    }
   });
 
 const restaurantImageTemplate = document.querySelector("#restaurant-img-template").content;
@@ -117,13 +124,18 @@ const restaurantImageContainer = document.querySelector("#category-restaurant-co
 fetch("billeder.json")
   .then((response) => response.json())
   .then((images) => {
-    const filteredImage = images.filter((image) => image.By === byNavn);
+    const addedImages = [];
 
-    filteredImage.forEach((image) => {
-      const imageClone = restaurantImageTemplate.cloneNode(true);
-      imageClone.querySelector("img").src = "img/" + `${image.By}` + "-restauranter.webp";
-      restaurantImageContainer.appendChild(imageClone);
-    });
+    for (let i = 0; i < images.length; i++) {
+      const image = images[i];
+
+      if (image.By === byNavn && !addedImages.includes(image.By)) {
+        const imageClone = restaurantImageTemplate.cloneNode(true);
+        imageClone.querySelector("img").src = "img/" + `${image.By}` + "-restauranter.webp";
+        restaurantImageContainer.appendChild(imageClone);
+        addedImages.push(image.By);
+      }
+    }
   });
 
 const sightseeingImageTemplate = document.querySelector("#sightseeing-img-template").content;
@@ -132,11 +144,18 @@ const sightseeingImageContainer = document.querySelector("#category-sightseeing-
 fetch("billeder.json")
   .then((response) => response.json())
   .then((images) => {
-    const filteredImage = images.filter((image) => image.By === byNavn);
+    const addedImages = []; // Array til at holde styr på de tilføjede billeder
 
-    filteredImage.forEach((image) => {
-      const imageClone = sightseeingImageTemplate.cloneNode(true);
-      imageClone.querySelector("img").src = "img/" + `${image.By}` + "-sightseeing.webp";
-      sightseeingImageContainer.appendChild(imageClone);
-    });
+    for (let i = 0; i < images.length; i++) {
+      // Loop gennem hver element i images arrayet
+      const image = images[i]; // Gem det aktuelle billede i en variabel
+
+      // Tjek om billedet matcher den specificerede By-værdi og ikke allerede er blevet tilføjet
+      if (image.By === byNavn && !addedImages.includes(image.By)) {
+        const imageClone = sightseeingImageTemplate.cloneNode(true); // Klone sightseeingImageTemplate
+        imageClone.querySelector("img").src = "img/" + `${image.By}` + "-sightseeing.webp"; // Sæt src-attributten til det passende billede
+        sightseeingImageContainer.appendChild(imageClone); // Tilføj klonen til sightseeingImageContainer
+        addedImages.push(image.By); // Tilføj By-værdien til addedImages arrayet for at markere at billedet er blevet tilføjet
+      }
+    }
   });
