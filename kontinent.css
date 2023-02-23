@@ -88,4 +88,7 @@
 .by-kort > a:nth-child(1) {
   grid-area: 1/ 1;
   z-index: 999;
+  font-family: "Outfit";
+  text-transform: uppercase;
+  font-weight: 700;
 }

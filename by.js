@@ -70,17 +70,30 @@ fetch("sightseeing.json")
 const heroTemplate = document.querySelector("#hero-template").content;
 const heroContainer = document.querySelector("#hero-container");
 
+// fetch("billeder.json")
+//   .then((response) => response.json())
+//   .then((heroes) => {
+//     const filteredHero = heroes.filter((hero) => hero.By === byNavn);
+
+//     filteredHero.forEach((hero) => {
+//       const heroClone = heroTemplate.cloneNode(true);
+//       heroClone.querySelector("h1").textContent = hero.By;
+//       heroClone.querySelector("img").src = "img/" + hero.billede;
+//       heroContainer.appendChild(heroClone);
+//     });
+//   });
+
 fetch("billeder.json")
   .then((response) => response.json())
   .then((heroes) => {
-    const filteredHero = heroes.filter((hero) => hero.By === byNavn);
+    const hero = heroes.find((hero) => hero.By === byNavn);
 
-    filteredHero.forEach((hero) => {
+    if (hero) {
       const heroClone = heroTemplate.cloneNode(true);
       heroClone.querySelector("h1").textContent = hero.By;
-      heroClone.querySelector("img").src = "img/" + hero.billede;
+      heroClone.querySelector("img").src = "img/" + `${hero.By}` + "-hero.webp";
       heroContainer.appendChild(heroClone);
-    });
+    }
   });
 
 const shoppingImageTemplate = document.querySelector("#shopping-img-template").content;
@@ -108,7 +121,7 @@ fetch("billeder.json")
 
     filteredImage.forEach((image) => {
       const imageClone = restaurantImageTemplate.cloneNode(true);
-      imageClone.querySelector("img").src = "img/" + `${image.By}` + "-restaurant.webp";
+      imageClone.querySelector("img").src = "img/" + `${image.By}` + "-restauranter.webp";
       restaurantImageContainer.appendChild(imageClone);
     });
   });
