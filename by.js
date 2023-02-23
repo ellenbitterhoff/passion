@@ -82,3 +82,48 @@ fetch("billeder.json")
       heroContainer.appendChild(heroClone);
     });
   });
+
+const shoppingImageTemplate = document.querySelector("#shopping-img-template").content;
+const shoppingImageContainer = document.querySelector("#category-shopping-container");
+
+fetch("billeder.json")
+  .then((response) => response.json())
+  .then((images) => {
+    const filteredImage = images.filter((image) => image.By === byNavn);
+
+    filteredImage.forEach((image) => {
+      const imageClone = shoppingImageTemplate.cloneNode(true);
+      imageClone.querySelector("img").src = "img/" + `${image.By}` + "-shopping.webp";
+      shoppingImageContainer.appendChild(imageClone);
+    });
+  });
+
+const restaurantImageTemplate = document.querySelector("#restaurant-img-template").content;
+const restaurantImageContainer = document.querySelector("#category-restaurant-container");
+
+fetch("billeder.json")
+  .then((response) => response.json())
+  .then((images) => {
+    const filteredImage = images.filter((image) => image.By === byNavn);
+
+    filteredImage.forEach((image) => {
+      const imageClone = restaurantImageTemplate.cloneNode(true);
+      imageClone.querySelector("img").src = "img/" + `${image.By}` + "-restaurant.webp";
+      restaurantImageContainer.appendChild(imageClone);
+    });
+  });
+
+const sightseeingImageTemplate = document.querySelector("#sightseeing-img-template").content;
+const sightseeingImageContainer = document.querySelector("#category-sightseeing-container");
+
+fetch("billeder.json")
+  .then((response) => response.json())
+  .then((images) => {
+    const filteredImage = images.filter((image) => image.By === byNavn);
+
+    filteredImage.forEach((image) => {
+      const imageClone = sightseeingImageTemplate.cloneNode(true);
+      imageClone.querySelector("img").src = "img/" + `${image.By}` + "-sightseeing.webp";
+      sightseeingImageContainer.appendChild(imageClone);
+    });
+  });
